@@ -25,6 +25,10 @@ export const ReduxTsx = (): JSX.Element => {
       'https://www.youtube.com/watch?v=F2oDONZ9vik&list=PLPl81lqbj-4KswGEN6o4lF0cscQalpycD&index=17&ab_channel=Bluuweb%21Bluuweb%21Verified',
       ' consumiendo el redux al interior de React',
     ],
+    parte5: [
+      'https://www.youtube.com/watch?v=x1gNjaLRCis&list=PLPl81lqbj-4KswGEN6o4lF0cscQalpycD&index=18&ab_channel=Bluuweb%21Bluuweb%21Verified',
+      'resolviendo tareas',
+    ],
   };
 
   const videosRef = () => {
