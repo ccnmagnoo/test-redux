@@ -3,7 +3,7 @@ import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import { pokeReducer } from './pokeDucks';
 
 const rootReducer = combineReducers({
-  elementoPoke: pokeReducer,
+  poke: pokeReducer,
 });
 /** @param combineReducers({}) se incorporan todos los reducers en los DUCKs */
 
