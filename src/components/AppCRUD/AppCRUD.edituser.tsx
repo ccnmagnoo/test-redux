@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { useForm } from 'react-hook-form';
-import { UserData } from '../AppCRUD';
+import { UserData } from './AppCRUD';
 
 export const UserEdit = (props: {
   funcion: (user: UserData) => void;

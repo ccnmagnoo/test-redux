@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Fragment } from 'react';
-import { UserTable } from './AppCRUD/AppCRUD.table';
+import { UserTable } from './AppCRUD.table';
 import { v4 as uuidv4 } from 'uuid';
-import { UserAdd } from './AppCRUD/AppCRUD.adduser';
+import { UserAdd } from './AppCRUD.adduser';
 
 export interface UserData {
   id: string;

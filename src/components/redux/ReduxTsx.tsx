@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Pokemones } from './Pokemones';
+import { Pokemones } from './PokeApp';
 import { Provider } from 'react-redux';
 import { generateStore } from './store';
 

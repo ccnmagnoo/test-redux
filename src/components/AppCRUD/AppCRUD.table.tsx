@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fragment } from 'react';
-import { UserData } from '../AppCRUD';
+import { UserData } from './AppCRUD';
 import { UserEdit } from './AppCRUD.edituser';
 
 export const UserTable = (props: {

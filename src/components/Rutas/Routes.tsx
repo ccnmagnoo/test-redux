@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter, Switch, Route, Link, NavLink } from 'react-router-dom';
-import { FlujoIf } from './FlujoIf';
-import { FormularioAuto } from './FormularioAt';
-import { Header } from './Header';
-import { Lista } from './Lista';
+import { FlujoIf } from '../basico/FlujoIf';
+import { FormularioAuto } from '../Formularios/FormularioAt';
+import { Header } from '../basico/Header';
+import { Lista } from '../basico/Lista';
 
 export const RouterReact = (): JSX.Element => {
   const urlTurorial = `https://www.youtube.com/watch?v=pp2ZmjTBB5M&list=PLPl81lqbj-4KswGEN6o4lF0cscQalpycD&index=11&t=751s&ab_channel=Bluuweb%21Bluuweb%21Verified`;

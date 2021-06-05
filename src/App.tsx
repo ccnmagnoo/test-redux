@@ -1,18 +1,18 @@
-import { FormularioAuto } from './components/FormularioAt';
-import { FlujoIf } from './components/FlujoIf';
-import { Header } from './components/Header';
-import { Intro } from './components/Intro';
-import { Lista } from './components/Lista';
-import { FormReactHook } from './components/FormularioRH';
+import { FormularioAuto } from './components/Formularios/FormularioAt';
+import { FlujoIf } from './components/basico/FlujoIf';
+import { Header } from './components/basico/Header';
+import { Intro } from './components/basico/Intro';
+import { Lista } from './components/basico/Lista';
+import { FormReactHook } from './components/Formularios/FormularioRH';
 import { useState, useEffect } from 'react';
-import { EjemploUno } from './components/EjemploUno';
-import { PasandoProps } from './components/PropsEnComponentes';
-import { AplicacionCrud } from './components/AppCRUD';
+import { EjemploUno } from './components/basico/EjemploUno';
+import { PasandoProps } from './components/basico/PropsEnComponentes';
+import { AplicacionCrud } from './components/AppCRUD/AppCRUD';
 import { uuid } from 'uuidv4';
-import { RouterConApi } from './components/RoutConApis';
-import React from 'react';
-import { RouterReact } from './components/Routes';
+import { RouterConApi } from './components/Rutas/RoutConApis';
+import { RouterReact } from './components/Rutas/Routes';
 import { ReduxTsx } from './components/redux/ReduxTsx';
+import FirebaseApp from './components/firebase/FirebaseApp';
 
 export function App() {
   //contenedor de paginas
@@ -28,7 +28,8 @@ export function App() {
     | 'aplicacionCrud'
     | 'router'
     | 'routerApi'
-    | 'redux';
+    | 'redux'
+    | 'firebaseCrud';
 
   const paginas: { [page: string]: JSX.Element } = {
     header: <Header />,
@@ -43,6 +44,7 @@ export function App() {
     router: <RouterReact />,
     routerApi: <RouterConApi />,
     redux: <ReduxTsx />,
+    firebase: <FirebaseApp />,
   };
 
   //hook de paginas
